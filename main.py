@@ -149,9 +149,9 @@ class TaskList:
         self.__taskList.append(task)
 
     # clear the task list - not really the intended means of calling the method, but can be done this way
-    def clearList(self, user):
+    def clearList(self, user, pin):
         # if the user isn't an admin, prevent them from clearing the list
-        if type(user) != Admin:
+        if type(user) != Admin or user.pin != pin:
             print("You can't clear the list!")
         else:
             #run clear method on taskList
