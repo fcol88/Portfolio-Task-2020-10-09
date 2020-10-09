@@ -2,15 +2,12 @@
 Portfolio task for CETM65
 
 
-# Task List V1.0
+## Task List V1.0
 
-# Author::: 
-Matt Graham
-
-# Description:::
+### Description
 Learning exercise for CETM65
 
-# Usage:::
+### Usage
 Three objects are instantiated at runtime for your convenience: User regularUser, Admin adminUser and TaskList tasks
 
 Users and Admins have some (very) basic authentication via the pin property. Enter your pin when you're adding an action to "make sure" someone isn't giving you silly tasks to do.
