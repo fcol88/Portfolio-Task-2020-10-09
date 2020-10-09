@@ -125,11 +125,11 @@ class Task:
 
     # returns task as a string
     def __str__(self):
-        return "Task: Description={0}, Status={1}, User={2} {3} Created={4:%d/%m/%y %H:%M}".format(self.description, self.status, self.user.firstName, self.user.lastName, self.created.timestamp) + "" if self.completed == None else "|| Completed: {0:%d/%m/%y %H:%M}".format(self.completed.timestamp)
+        return "Task: Description={0}, Status={1}, User={2} {3} Created={4:%d/%m/%y %H:%M}".format(self.description, self.status, self.user.firstName, self.user.lastName, self.created.timestamp) + ("" if self.completed == None else " || Completed: {0:%d/%m/%y %H:%M}".format(self.completed.timestamp))
 
     # returns code used to instantiate object
     def __repr__(self):
-        return "Task(user,'{1}')".format(self.description)
+        return "Task(user,'{0}')".format(self.description)
 
 #define task list class
 class TaskList:
